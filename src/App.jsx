@@ -25,11 +25,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="ui container">
+      <div className="ui container center ">
         <Header as="h1">Buscador de repos</Header>
         <Search onClickSearch = {this.search} />
         <br />
-        <Card.Group>
+        <Card.Group className=Center">
           {this.state.items.map(item => <GithubCard {...item} /> )}
         </Card.Group>
       </div>
